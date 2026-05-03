@@ -2,8 +2,8 @@
 
 Official product website for **Hisaab-Pro** - Professional offline-first business ledger system for Indian Chartered Accountants and small businesses.
 
-[![GitHub stars](https://img.shields.io/github/stars/SolarisXD/Hisaab-Pro-Website?style=social)](https://github.com/SolarisXD/Hisaab-Pro-Website)
-[![GitHub forks](https://img.shields.io/github/forks/SolarisXD/Hisaab-Pro-Website?style=social)](https://github.com/SolarisXD/Hisaab-Pro-Website)
+[![GitHub stars](https://img.shields.io/github/stars/SolarisXD/Hisaab-Pro?style=social)](https://github.com/SolarisXD/Hisaab-Pro)
+[![GitHub forks](https://img.shields.io/github/forks/SolarisXD/Hisaab-Pro?style=social)](https://github.com/SolarisXD/Hisaab-Pro)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ---
