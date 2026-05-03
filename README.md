@@ -288,13 +288,12 @@ Contributions are welcome! Please follow these steps:
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
-The core Hisaab-Pro application is also licensed under MIT: [SolarisXD/Hisaab-Pro/LICENSE](https://github.com/SolarisXD/Hisaab-Pro/blob/main/LICENSE)
+The core Hisaab-Pro application is also licensed under MIT: [SolarisXD/Hisaab-Pro/LICENSE](https://github.com/SolarisXD/Hisaab-Pro/blob/origin/LICENSE)
 
 ---
 
 ## Contact
-
-- **Email:** support@hisaabpro.com
+ 
 - **Issues:** [GitHub Issues](https://github.com/SolarisXD/Hisaab-Pro-Website/issues)
 - **Core Repo:** [SolarisXD/Hisaab-Pro](https://github.com/SolarisXD/Hisaab-Pro)
 
@@ -313,6 +312,6 @@ The core Hisaab-Pro application is also licensed under MIT: [SolarisXD/Hisaab-Pr
 
 **Hisaab-Pro: Precision Accounting for Indian Professionals**
 
-[Visit Website](https://solarisxd.github.io/Hisaab-Pro-Website/) • [Core Repository](https://github.com/SolarisXD/Hisaab-Pro) • [Report Issue](https://github.com/SolarisXD/Hisaab-Pro-Website/issues)
+[Visit Website](https://hisaab-pro.vercel.app/) • [Core Repository](https://github.com/SolarisXD/Hisaab-Pro) • [Report Issue](https://github.com/SolarisXD/Hisaab-Pro-Website/issues)
 
 </div>
