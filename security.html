@@ -29,7 +29,7 @@ tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-container
             <li><a href="contact.html" class="nav-link">Contact</a></li>
             <li><a href="issue.html" class="nav-link">Report Issue</a></li>
         </ul>
-        <a href="changelog.html" class="bg-primary text-on-primary px-5 py-2.5 rounded-lg text-sm font-semibold hover:opacity-90 active:scale-95 transition-all shadow-sm" style="white-space:nowrap;">Download for Windows</a>
+        <a href="#" id="download-btn-header" data-base-text="Download for Windows" class="bg-primary text-on-primary px-5 py-2.5 rounded-lg text-sm font-semibold hover:opacity-90 active:scale-95 transition-all shadow-sm" style="white-space:nowrap;">Download for Windows v1.0.0</a>
     </nav>
 </header>
 
@@ -177,7 +177,8 @@ tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-container
     <div class="max-w-7xl mx-auto py-12 px-6">
         <div class="flex flex-col md:flex-row justify-between items-start gap-10 mb-8">
             <div class="max-w-xs"><div class="text-lg font-bold text-slate-900 mb-2">Hisaab-Pro</div>
-                <p class="text-xs text-slate-500 leading-relaxed">Professional accounting software for Indian CAs and small businesses. USB-portable, fully offline, AES-256 encrypted.</p>
+                <p id="repo-description" class="text-xs text-slate-500 leading-relaxed mb-4">Professional accounting software for Indian CAs and small businesses. USB-portable, fully offline, AES-256 encrypted.</p>
+                <div id="repo-stats"></div>
             </div>
             <div class="flex flex-wrap gap-10">
                 <div class="flex flex-col gap-2">
@@ -200,9 +201,11 @@ tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-container
             </div>
         </div>
         <div class="border-t border-slate-200 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p class="text-xs text-slate-400">© 2024 DT Tech Inc. All rights reserved.</p>
-            <p class="text-xs text-slate-400">Precision accounting for Indian professionals.</p>
+            <p class="text-xs text-slate-400">&copy; 2024 DT Tech Inc. Licensed under <span id="repo-license" class="font-semibold text-slate-600">MIT License</span>.</p>
+            <p class="text-xs text-slate-400">View on <a href="https://github.com/SolarisXD/Hisaab-Pro" target="_blank" class="github-repo-link text-primary hover:underline">GitHub</a></p>
         </div>
     </div>
 </footer>
+<!-- GitHub Release API Integration -->
+<script src="js/github-release.js"></script>
 </body></html>

@@ -146,20 +146,20 @@
 <div class="lg:col-span-7 space-y-md">
 <div class="inline-flex items-center gap-2 px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full">
 <span class="material-symbols-outlined text-[18px]">verified</span>
-<span class="font-label-caps text-label-caps">STABLE RELEASE V1.0.0</span>
+<span class="font-label-caps text-label-caps">STABLE RELEASE <span id="version-badge">v1.0.0</span></span>
 </div>
 <h1 class="font-display-lg text-display-lg text-primary">Experience Financial Precision</h1>
 <p class="text-on-surface-variant font-body-main text-body-main max-w-2xl">
                     Hisaab-Pro provides Indian Chartered Accountants and small business owners with a robust, secure, and intuitive ledger system designed for the digital age.
                 </p>
 <div class="flex flex-wrap gap-md pt-md">
-<button class="flex items-center gap-3 bg-primary text-on-primary px-8 py-4 rounded-xl shadow-lg hover:bg-primary-container transition-all active:scale-95">
+        <a href="#" id="download-btn" data-base-text="Windows" class="flex items-center gap-3 bg-primary text-on-primary px-8 py-4 rounded-xl shadow-lg hover:bg-primary-container transition-all active:scale-95">
 <span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">download</span>
 <div class="text-left">
 <div class="font-label-caps text-label-caps opacity-80">DOWNLOAD FOR</div>
-<div class="font-title-sm text-title-sm">Windows v1.0.0</div>
+<div class="font-title-sm text-title-sm">Windows <span id="version-badge-btn">v1.0.0</span></div>
 </div>
-</button>
+</a>
 <button class="flex items-center gap-3 border-2 border-outline text-primary px-8 py-4 rounded-xl hover:bg-surface-variant transition-all active:scale-95">
 <span class="material-symbols-outlined">laptop_mac</span>
 <div class="text-left">
@@ -215,105 +215,17 @@
 <section class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
 <div class="px-lg py-md border-b border-slate-200 bg-slate-50 flex items-center justify-between">
 <h2 class="font-headline-md text-headline-md text-primary">Version History</h2>
-<span class="text-slate-500 font-data-mono text-data-mono">Updated: Oct 2024</span>
+        <div class="flex items-center gap-4">
+            <button id="toggle-all-btn" onclick="toggleAllReleases()" class="text-sm font-semibold text-primary hover:underline hidden">Expand All</button>
+            <span class="text-slate-500 font-data-mono text-data-mono">Updated: <span id="changelog-updated-date">...</span></span>
+        </div>
 </div>
-<div class="divide-y divide-slate-100">
-<!-- V1.0.0 -->
-<div class="p-lg">
-<div class="flex items-start gap-gutter">
-<div class="w-32 flex-shrink-0">
-<span class="inline-block bg-primary text-white px-3 py-1 rounded font-data-mono text-xs font-bold">V1.0.0</span>
-<div class="mt-2 font-label-caps text-[10px] text-slate-400">OCT 15, 2024</div>
-</div>
-<div class="flex-grow">
-<h4 class="font-title-sm text-title-sm text-primary mb-md">The Professional Launch</h4>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-lg">
-<div>
-<h5 class="font-label-caps text-label-caps text-secondary mb-sm uppercase">New Features</h5>
-<ul class="space-y-2 text-on-surface-variant text-body-main">
-<li class="flex items-start gap-2">
-<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
-<span class="">Full double-entry bookkeeping engine with real-time balancing.</span>
-</li>
-<li class="flex items-start gap-2">
-<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
-<span class="">Automated GST-compliant invoice generation and tax calculation.</span>
-</li>
-<li class="flex items-start gap-2">
-<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
-<span class="">High-density Financial Ledger view with Data-Mono typography.</span>
-</li>
-</ul>
-</div>
-<div>
-<h5 class="font-label-caps text-label-caps text-on-primary-container mb-sm uppercase">Improvements</h5>
-<ul class="space-y-2 text-on-surface-variant text-body-main">
-<li class="flex items-start gap-2">
-<span class="material-symbols-outlined text-on-primary-container text-[18px]">trending_up</span>
-<span class="">Optimized database indexing for ledgers with 100k+ entries.</span>
-</li>
-<li class="flex items-start gap-2">
-<span class="material-symbols-outlined text-on-primary-container text-[18px]">trending_up</span>
-<span class="">Enhanced multi-user access controls and audit logs.</span>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- V1.0.0-rc -->
-<div class="p-lg bg-slate-50/50">
-<div class="flex items-start gap-gutter opacity-80">
-<div class="w-32 flex-shrink-0">
-<span class="inline-block bg-slate-200 text-slate-700 px-3 py-1 rounded font-data-mono text-xs font-bold">V1.0.0-rc</span>
-<div class="mt-2 font-label-caps text-[10px] text-slate-400">SEP 20, 2024</div>
-</div>
-<div class="flex-grow">
-<h4 class="font-title-sm text-title-sm text-slate-700 mb-md">Release Candidate &amp; Beta Stability</h4>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-lg">
-<div>
-<h5 class="font-label-caps text-label-caps text-slate-500 mb-sm uppercase">Bug Fixes</h5>
-<ul class="space-y-2 text-on-surface-variant text-body-main">
-<li class="flex items-start gap-2">
-<span class="material-symbols-outlined text-error text-[18px]">bug_report</span>
-<span class="">Resolved race condition during simultaneous journal entries.</span>
-</li>
-<li class="flex items-start gap-2">
-<span class="material-symbols-outlined text-error text-[18px]">bug_report</span>
-<span class="">Fixed PDF export alignment for wide balance sheets.</span>
-</li>
-</ul>
-</div>
-<div>
-<h5 class="font-label-caps text-label-caps text-slate-500 mb-sm uppercase">Security Updates</h5>
-<ul class="space-y-2 text-on-surface-variant text-body-main">
-<li class="flex items-start gap-2">
-<span class="material-symbols-outlined text-primary text-[18px]">lock</span>
-<span class="">Implementation of AES-256 encryption for local database files.</span>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="p-lg bg-white text-center border-t border-slate-100">
-<button onclick="var h=document.getElementById('older-versions');h.style.display=h.style.display==='none'?'block':'none';this.textContent=h.style.display==='none'?'Show Older Versions':'Hide Older Versions'" class="text-primary font-inter text-sm font-semibold hover:underline">Show Older Versions</button>
-<div id="older-versions" style="display:none;" class="mt-4 text-left">
-  <div class="p-lg bg-slate-50/70 divide-y divide-slate-100">
-    <div class="py-4 flex items-start gap-gutter opacity-60">
-      <div class="w-32 flex-shrink-0"><span class="inline-block bg-slate-200 text-slate-600 px-3 py-1 rounded font-data-mono text-xs font-bold">V0.9.0-beta</span><div class="mt-2 font-label-caps text-[10px] text-slate-400">JUL 10, 2024</div></div>
-      <div class="flex-grow"><h4 class="font-title-sm text-title-sm text-slate-600 mb-2">Public Beta Release</h4><p class="text-on-surface-variant text-body-main text-sm">Initial public beta with core ledger functionality, GST invoice generation, and USB portability.</p></div>
+    <div id="changelog-entries" class="divide-y divide-slate-100">
+        <div class="p-lg text-center text-slate-500 flex flex-col items-center gap-4">
+            <span class="material-symbols-outlined animate-spin">sync</span>
+            <span>Loading release history from GitHub...</span>
+        </div>
     </div>
-    <div class="py-4 flex items-start gap-gutter opacity-50">
-      <div class="w-32 flex-shrink-0"><span class="inline-block bg-slate-100 text-slate-500 px-3 py-1 rounded font-data-mono text-xs font-bold">V0.5.0-alpha</span><div class="mt-2 font-label-caps text-[10px] text-slate-400">APR 01, 2024</div></div>
-      <div class="flex-grow"><h4 class="font-title-sm text-title-sm text-slate-500 mb-2">Internal Alpha</h4><p class="text-on-surface-variant text-body-main text-sm">Initial prototype with double-entry bookkeeping engine and basic reporting.</p></div>
-    </div>
-  </div>
-</div>
-</div>
 </section>
 </main>
 <!-- Footer — Unified across all pages -->
@@ -322,7 +234,8 @@
         <div class="flex flex-col md:flex-row justify-between items-start gap-10 mb-8">
             <div class="max-w-xs">
                 <div class="text-lg font-bold text-slate-900 mb-2">Hisaab-Pro</div>
-                <p class="text-xs text-slate-500 leading-relaxed">Professional accounting software for Indian CAs and small businesses. USB-portable, fully offline, AES-256 encrypted.</p>
+                <p id="repo-description" class="text-xs text-slate-500 leading-relaxed mb-4">Professional accounting software for Indian CAs and small businesses. USB-portable, fully offline, AES-256 encrypted.</p>
+                <div id="repo-stats"></div>
             </div>
             <div class="flex flex-wrap gap-10">
                 <div class="flex flex-col gap-2">
@@ -345,11 +258,11 @@
             </div>
         </div>
         <div class="border-t border-slate-200 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p class="text-xs text-slate-400">&copy; 2024 DT Tech Inc. All rights reserved.</p>
-            <p class="text-xs text-slate-400">Precision accounting for Indian professionals.</p>
+            <p class="text-xs text-slate-400">&copy; 2024 DT Tech Inc. Licensed under <span id="repo-license" class="font-semibold text-slate-600">MIT License</span>.</p>
+            <p class="text-xs text-slate-400">View on <a href="https://github.com/SolarisXD/Hisaab-Pro" target="_blank" class="github-repo-link text-primary hover:underline">GitHub</a></p>
         </div>
     </div>
 </footer>
-
-
+<!-- GitHub Release API Integration -->
+<script src="js/github-release.js"></script>
 </body></html>
