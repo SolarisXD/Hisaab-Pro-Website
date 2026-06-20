@@ -20,7 +20,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     const stored = localStorage.getItem('theme') as Theme | null;
-    const preferred = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    const preferred = stored || 'light';
     // eslint-disable-next-line react-hooks/rules-of-hooks, react-hooks/exhaustive-deps
     setTimeout(() => {
       setTheme(preferred);
